@@ -1,6 +1,6 @@
 {
   "whitelist": [
-    "play.mazenetwork.com.tr"
+    "play.mazenetwork.com.tr",
     "localhost"
   ]
 }
