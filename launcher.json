@@ -1,19 +1,31 @@
 {
-    "java_preferred_type": "mazenetwork",
-    "version": "0.1.38",
-    "bootVersion": "0.4",
-    "versionControl": {
-        "windows": {
-            "checksum": "03ef2fb364083ac025846e7d5092d0960b9d6d40",
-            "url": "https://launcher.mazenetwork.com.tr/bootstrap/bootstrap.jar"
-        }
-    },
-    "launcher_jar_url": "https://launcher.mazenetwork.com.tr/minecraft-launcher/launcher.jar",
-    "launcher_jar_checksum": "7655f83343e78d3b7fa05d67ee82e34838b78ead",
-    "launcher_path": "launcher.jar",
-    "launcher_args": "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Dcom.sun.net.ssl.checkRevocation=false -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:+DisableAttachMechanism -Dcom.ibm.tools.attach.enable=no -Djna.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -Dr=1 -Xmn%initRAM%M -Xmx%maxRAM%M -Djava.net.preferIPv4Stack=true %runArgs%",
-    "java": {
-        "url": "https://launcher.flexmc.com.tr/java/java.zip",
-        "64": "c8f566104ed734bd86b9ad1d18351a8eb099b67c"
+  "java_preferred_type": "maze",
+  "version": "0.1.38",
+  "bootVersion": "0.1.1",
+  "versionControl": {
+    "windows": {
+      "checksum": "52d8fc2f7327fa99a1802e011d8e34267bce5492",
+      "url": "https://launcher.mazenetwork.com.tr/bootstrap/bootstrap.jar"
     }
+  },
+  "natives_url": "https://launcher.mazenetwork.com.tr/minecraft/client/natives.zip",
+  "assets_url": "https://launcher.mazenetwork.com.tr/minecraft/client/assets.zip",
+  "launcher_jar_url": "https://launcher.mazenetwork.com.tr/minecraft-launcher/launcher.jar",
+  "launcher_jar_checksum": "ab83bc2cca9c5c9c1a246f7b87b1e15e3a4ed328",
+  "launcher_path": "launcher.jar",
+  "launcher_args": "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Dcom.sun.net.ssl.checkRevocation=false -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:+DisableAttachMechanism -Dcom.ibm.tools.attach.enable=no -Djna.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -Dr=1 -Xmn%initRAM%M -Xmx%maxRAM%M -Djava.net.preferIPv4Stack=true %runArgs%",
+  "javaIntegrity": {
+    "rt-x64": "f1de152de016e94e0f9dbdded9be1ea21b6837a8"
+  },
+  "downloads": {
+    "client": {
+      "sha1": "fbc79e8693506b3cfd2943ab1634cc767185414a",
+      "url": "https://launcher.mazenetwork.com.tr/minecraft/client/client.jar"
+    }
+  },
+  "java": {
+    "url": "https://launcher.mazenetwork.com.tr/java/java.zip",
+    "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "sha1-x32": "ee0288462fc32992a0f9dfab5aeb3385412f0c4f"
+  }
 }
