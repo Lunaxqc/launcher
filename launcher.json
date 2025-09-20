@@ -4,7 +4,7 @@
   "bootVersion": "0.1.1",
   "versionControl": {
     "windows": {
-      "checksum": "78D1D665024EC6315A8DC67246D6904A77B7C299",
+      "checksum": "78d1d665024ec6315a8dc67246d6904a77b7c299",
       "url": "https://launcher.mazenetwork.com.tr/bootstrap/bootstrap.jar"
     }
   },
