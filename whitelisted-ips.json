@@ -1,7 +1,8 @@
 {
   "whitelist": [
-    "play.mazenetwork.com.tr:25565",
+    "play.mazenetwork.com.tr",
     "localhost:25565",
     "31.56.87.151:26524"
   ]
 }
+
