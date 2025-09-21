@@ -1,6 +1,7 @@
 {
   "whitelist": [
     "play.mazenetwork.com.tr",
-    "localhost"
+    "localhost",
+    "31.56.87.151"
   ]
 }
