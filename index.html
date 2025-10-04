@@ -1,92 +1,136 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>launcher.mazenetwork.com.tr</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="images/maze.png" type="image/png">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #0d1b2a, #1b263b);
-            font-family: 'Montserrat', sans-serif;
-            color: white;
-            overflow: hidden;
-            position: relative;
-        }
+<html lang="tr"><head><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maze Launcher</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#0f172a;
+    --bg2:#071338;
+    --accent1:#7C3AED;
+    --accent2:#06b6d4;
+    --glass-border: rgba(255,255,255,0.08);
+    --text: #e6eef8;
+  }
 
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
+  html,body{height:100%;margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto;}
+  body{
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.12), transparent),
+                radial-gradient(900px 500px at 90% 90%, rgba(6,182,212,0.08), transparent),
+                linear-gradient(180deg,var(--bg1),var(--bg2));
+    color:var(--text);
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+  }
 
-        .container {
-            text-align: center;
-            z-index: 2;
-            position: relative;
-        }
+  .maze-wrap{
+    position:absolute; inset:0; z-index:0; pointer-events:none;
+    display:flex; align-items:center; justify-content:center;
+  }
+  svg.maze {
+    width:140vmin; height:140vmin; opacity:0.12; transform:rotate(12deg);
+    filter: drop-shadow(0 20px 40px rgba(2,6,23,0.6));
+  }
+  .maze path {
+    stroke:rgba(255,255,255,0.06);
+    stroke-width:1.6;
+    fill:none;
+  }
+  .maze .glow {
+    stroke: url(#g1);
+    stroke-width:2.4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    fill:none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: travel 6s linear infinite;
+    filter: url(#f1);
+    opacity:0.95;
+  }
+  @keyframes travel {
+    to { stroke-dashoffset: 0; }
+  }
 
-        .title {
-            font-size: 3rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ffffff;
-            text-shadow: 0 0 10px rgba(255, 77, 77, 0.8), 0 0 15px rgba(77, 121, 255, 0.6);
-            margin-bottom: 20px;
-            animation: fadeIn 1s ease-in forwards;
-        }
+  .card {
+    position:relative; 
+    z-index:2;
+    width:min(600px,92%);
+    border-radius:20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border:1px solid var(--glass-border);
+    box-shadow: 0 10px 40px rgba(2,6,23,0.6);
+    padding:32px;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    backdrop-filter: blur(8px) saturate(120%);
+  }
 
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
+  .logo {
+    flex:0 0 64px;
+    height:64px;
+  }
+  .logo img {
+    width:64px;
+    height:64px;
+    border-radius:12px;
+    object-fit:cover;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  }
 
-        .subtitle {
-            font-size: 1.5rem;
-            color: #e0e0e0;
-            animation: fadeIn 1s ease-in 0.5s forwards;
-            opacity: 0;
-        }
-    </style>
+  h1 {
+    margin:0;
+    font-family:'Orbitron',sans-serif;
+    font-weight:700;
+    font-size:38px;
+    background:linear-gradient(90deg,var(--accent2),var(--accent1));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+
+  .foot {
+    position:fixed; right:18px; bottom:18px; z-index:3; 
+    font-size:12px; color:rgba(230,238,248,0.5);
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.18); 
+    padding:6px 10px; 
+    border-radius:10px; 
+    border:1px solid rgba(255,255,255,0.03);
+  }
+</style>
 </head>
 <body>
-    <div id="particles-js"></div>
-    <div class="container">
-        <h1 class="title">Cok Gizli Dosyalar</h1>
-        <h3 class="subtitle">Sadece yetkili kullanıcılar erişebilir.</h3>
-    </div>
+  <div class="maze-wrap" aria-hidden="true">
+    <svg class="maze" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop offset="0" stop-color="#06b6d4"></stop>
+          <stop offset="1" stop-color="#7C3AED"></stop>
+        </linearGradient>
+        <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+          <feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+        </filter>
+      </defs>
+      <path d="M50 50 H950 V950 H50 Z M150 50 V150 H850 V50" class="lines"></path>
+      <path d="M100 200 H900 M100 300 H900 M100 400 H900 M100 500 H900 M100 600 H900 M100 700 H900 M100 800 H900" class="lines"></path>
+      <path d="M200 100 V900 M300 100 V900 M400 100 V900 M500 100 V900 M600 100 V900 M700 100 V900 M800 100 V900" class="lines"></path>
+      <path class="glow" d="M80 920 C140 820,240 760,320 700 C420 620,560 560,680 480 C760 420,860 360,920 280"></path>
+    </svg>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": { "value": 80 },
-                "color": { "value": "#ffffff" },
-                "shape": { "type": "circle" },
-                "opacity": { "value": 0.5, "random": true },
-                "size": { "value": 3, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#ff4d4d", "opacity":0.4, "width":1 },
-                "move": { "enable": true, "speed": 2 }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": { "enable": true, "mode": "repulse" },
-                    "onclick": { "enable": true, "mode": "push" }
-                }
-            },
-            "retina_detect": true
-        });
-    </script>
-</body>
-</html>
+  <main class="card">
+    <div class="logo">
+      <img src="images/maze.png" alt="Maze Launcher">
+    </div>
+    <h1>Maze Launcher</h1>
+  </main>
+
+  <div class="foot">Developed by Anwxy</div>
+
+
+</body></html>
