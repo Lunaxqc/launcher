@@ -1,8 +1,5 @@
 {
   "whitelist": [
-    "play.mazenetwork.com.tr",
-    "localhost",
-    "pre-1.mangoohost.com.tr:26038"
+    "play.mazenetwork.com.tr"
   ]
 }
-
