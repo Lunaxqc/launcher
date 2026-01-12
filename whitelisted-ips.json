@@ -1,8 +1,6 @@
 {
   "whitelist": [
     "play.mazenetwork.com.tr",
-    "localhost",
-    "play.craftrise.com.tr"
+    "localhost"
   ]
 }
-
