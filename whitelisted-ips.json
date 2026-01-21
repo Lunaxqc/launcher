@@ -1,6 +1,7 @@
 {
   "whitelist": [
-    "play.mazenetwork.com.tr"
+    "play.mazenetwork.com.tr",
+    "localhost"
   ],
   "fallback": [
     "play.mazenetwork.com.tr"
