@@ -1,5 +1,8 @@
 {
   "whitelist": [
     "play.mazenetwork.com.tr"
+  ],
+  "fallback": [
+    "play.mazenetwork.com.tr"
   ]
 }
