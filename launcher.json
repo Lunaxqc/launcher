@@ -10,8 +10,8 @@
   },
   "natives_url": "https://www.dropbox.com/scl/fi/lf5emap12lmdvtbnec7ui/natives.zip?rlkey=bo79oudlplesiseejxf99wzrz&st=5rwb387p&dl=1",
   "assets_url": "https://www.dropbox.com/scl/fi/bqcsurvo59fey1p9dk1ei/assets.zip?rlkey=vsui6rxf06d7qycp73u1j8s9y&st=fmva3ium&dl=1",
-  "launcher_jar_url": "https://www.dropbox.com/scl/fi/1h3rjhyemu8st5jgdsvtv/launcher.jar?rlkey=j65lsmhqft0s0pc5ohyl6wa7k&st=wiupzgux&dl=1",
-  "launcher_jar_checksum": "9c124a6a18faa7dbcbf776eb5995c2e7e7fd9e54",
+  "launcher_jar_url": "https://www.dropbox.com/scl/fi/1h3rjhyemu8st5jgdsvtv/launcher.jar?rlkey=j65lsmhqft0s0pc5ohyl6wa7k&st=ht46cltn&dl=1",
+  "launcher_jar_checksum": "4ef6c4cf870fad8583c62509bc36612dc21ee99c",
   "launcher_path": "launcher.jar",
   "launcher_args": "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Dcom.sun.net.ssl.checkRevocation=false -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:+DisableAttachMechanism -Dcom.ibm.tools.attach.enable=no -Djna.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -Dr=1 -Xmn%initRAM%M -Xmx%maxRAM%M -Djava.net.preferIPv4Stack=true %runArgs%",
   "javaIntegrity": {
