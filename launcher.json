@@ -4,14 +4,14 @@
   "bootVersion": "0.1.1",
   "versionControl": {
     "windows": {
-      "checksum": "35058e0e1e2920b2cffa3bb2cc16462ebea206b2",
+      "checksum": "e344c832206486d69630a20ae7bcc34b0e573ac9",
       "url": "https://launcher.mazenetwork.com.tr/bootstrap/bootstrap.jar"
     }
   },
-  "natives_url": "https://www.dropbox.com/scl/fi/lf5emap12lmdvtbnec7ui/natives.zip?rlkey=bo79oudlplesiseejxf99wzrz&st=5rwb387p&dl=1",
-  "assets_url": "https://www.dropbox.com/scl/fi/vjv354pgchdzw5h99pvwd/assets.zip?rlkey=geg8ve0f8la9eauwbvr757htw&st=bh09p633&dl=1",
-  "launcher_jar_url": "https://www.dropbox.com/scl/fi/1h3rjhyemu8st5jgdsvtv/launcher.jar?rlkey=j65lsmhqft0s0pc5ohyl6wa7k&st=ht46cltn&dl=1",
-  "launcher_jar_checksum": "4ef6c4cf870fad8583c62509bc36612dc21ee99c",
+  "natives_url": "https://launcher.mazenetwork.com.tr/natives.zip",
+  "assets_url": "https://launcher.mazenetwork.com.tr/assets.zip",
+  "launcher_jar_url": "https://launcher.mazenetwork.com.tr/minecraft-launcher/launcher.jar",
+  "launcher_jar_checksum": "0f917c3655c37c2b3385df861c7b97f91dc2d04c",
   "launcher_path": "launcher.jar",
   "launcher_args": "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Dcom.sun.net.ssl.checkRevocation=false -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:+DisableAttachMechanism -Dcom.ibm.tools.attach.enable=no -Djna.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -Dr=1 -Xmn%initRAM%M -Xmx%maxRAM%M -Djava.net.preferIPv4Stack=true %runArgs%",
   "javaIntegrity": {
@@ -20,11 +20,11 @@
   "downloads": {
     "client": {
       "sha1": "c0979638d7280c7f1ab0e7a89a700e401bedcf00",
-      "url": "https://www.dropbox.com/scl/fi/k0kgw9ubl3cf5e6f59vzw/Maze.jar?rlkey=2rogwszrc4pvbjcj2lj7sh2b5&st=yi0m9kq3&dl=1"
+      "url": "https://launcher.mazenetwork.com.tr/minecraft-client/Maze.jar"
     }
   },
   "java": {
-    "url": "https://www.dropbox.com/scl/fi/rf7uj644c8sphp8vdzwh2/java.zip?rlkey=6u5b3qgznpd9x1wrrqriyrww5&st=71a7m3ry&dl=1",
+    "url": "https://launcher.mazenetwork.com.tr/java/java.zip",
     "sha1": "432bc1d69c0ca9617925ce44cfc9eb014789f2eb",
     "sha1-x32": "432bc1d69c0ca9617925ce44cfc9eb014789f2eb"
   }
