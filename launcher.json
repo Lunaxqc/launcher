@@ -4,14 +4,14 @@
   "bootVersion": "0.1.1",
   "versionControl": {
     "windows": {
-      "checksum": "a68121efa79b7da618008f83a09e0dd99ac4cb25",
+      "checksum": "df31ccf8c70732e7793daa509155dd152a0a9494",
       "url": "https://launcher.mazenetwork.com.tr/bootstrap/bootstrap.jar"
     }
   },
   "natives_url": "https://www.dropbox.com/scl/fi/zjjw8gxz8vnrc65uk99af/natives.zip?rlkey=foyvzfs1wzaspg35l8jnuwxlb&st=uftl9fbw&dl=1",
   "assets_url": "https://www.dropbox.com/scl/fi/0zw2loepww83y2vmxsj8k/assets.zip?rlkey=nfygge6t4kwk5copbhvt5fxk3&st=aam94843&dl=1",
   "launcher_jar_url": "https://launcher.mazenetwork.com.tr/minecraft-launcher/launcher.jar",
-  "launcher_jar_checksum": "5b67836fbebd6a3c1e3a291f757b377bccf23a6e",
+  "launcher_jar_checksum": "dccca9167bb3451b0b496179c47a40857a613147",
   "launcher_path": "launcher.jar",
   "launcher_args": "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Dcom.sun.net.ssl.checkRevocation=false -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:+DisableAttachMechanism -Dcom.ibm.tools.attach.enable=no -Djna.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -Dr=1 -Xmn%initRAM%M -Xmx%maxRAM%M -Djava.net.preferIPv4Stack=true %runArgs%",
   "javaIntegrity": {
